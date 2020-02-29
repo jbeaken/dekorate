@@ -1,7 +1,7 @@
-#Example:  Add custom container image name to generated yaml manifests 
+# Example:  Add custom container image name to generated yaml manifests 
 
-An example that showcases how to change the container image property name in the generated manifest. 
-To customize the generated manifests you need to add dekorate properties to your `application.yml` or `application.properties` descriptors. 
+An example that showcases how to change the container image property name in the generated manifest.
+To customize the generated manifests you need to add dekorate properties to your `application.yml` or `application.properties` descriptors.
 and have the following dependency in your class path:
 
     <dependency>
@@ -21,7 +21,7 @@ dekorate.docker.version=1.1
 Compile the project using:
 
     mvn clean install
-    
+
 You can find the generated deployment under: `target/classes/dekorate/kubernetes.yml` that should look like:
 ```---
 ---
